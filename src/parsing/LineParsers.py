@@ -27,3 +27,4 @@ def get_all_filters():
     filters.extend(InvalidPasswordParser.get_filters())
     filters.extend(ConnectParser.get_filters())
     filters.extend(DisconnectParser.get_filters())
+    return filters
