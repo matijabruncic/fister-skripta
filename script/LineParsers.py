@@ -141,7 +141,7 @@ def create_parser(line):
         return InvalidPasswordParser(line)
     elif line.__contains__('.anyconnect.devicetype'):
         return ConnectParser(line)
-    elif (line.__contains__('Session Type: SSL') or line.__contains__('Session Type: AnyC')):
+    elif line.__contains__('Session Type: SSL') or line.__contains__('Session Type: AnyC'):
         return DisconnectParser(line)
     else:
         ValueError("Missing parser for line " + line)
