@@ -1,5 +1,5 @@
-from script import LineParsers
-from script.model.Log import Log
+from src.parsing import LineParsers
+from src.model.Log import Log
 
 
 input_file = open('/home/mbruncic/PycharmProjects/fister-skripta/resources/input/16-4.txt', 'r')
